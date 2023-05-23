@@ -4,8 +4,11 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "ts-node app.ts",
-    "watch": "nodemon app.ts",
+    "start": "node dist/app.js",
+    "watch": "nodemon src/app.ts",
+    "dev": "npm run watch",
+    "build": "rm -r dist && tsc && cp -r src/static dist/",
+    "start:build": "npm run build && npm run start",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
