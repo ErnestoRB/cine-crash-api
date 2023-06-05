@@ -1,5 +1,5 @@
 import express from 'express'
-import { Autor } from '../../models/Autor'
+import type { Autor } from '../../models/Autor'
 const router = express.Router()
 
 router.get('/hola', (req, res) => {
