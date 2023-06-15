@@ -1,5 +1,6 @@
 import express from 'express'
 import type { Autor } from '../../models/Autor'
+import reservacionRouter from './reservacion'
 const router = express.Router()
 
 router.get('/hola', (req, res) => {
@@ -35,5 +36,7 @@ router.get('/autores', (req, res) => {
   ]
   res.send(autores)
 })
+
+router.use('/reservacion', reservacionRouter)
 
 export default router

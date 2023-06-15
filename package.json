@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node dist/app.js",
-    "watch": "nodemon src/app.ts",
+    "watch": "nodemon src/app.ts --resolveJsonModule",
     "dev": "npm run watch",
     "build": "rm -rf dist && tsc && cp -r src/static dist",
     "start:build": "npm run build && npm run start",
@@ -44,6 +44,8 @@
     "dotenv": "^16.1.4",
     "express": "^4.18.2",
     "express-validation": "^4.1.0",
+    "firebase": "^9.22.2",
+    "firebase-admin": "^11.9.0",
     "nodemailer": "^6.9.3"
   }
 }
