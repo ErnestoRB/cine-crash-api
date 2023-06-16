@@ -46,6 +46,7 @@
     "express-validation": "^4.1.0",
     "firebase": "^9.22.2",
     "firebase-admin": "^11.9.0",
+    "moment-timezone": "^0.5.43",
     "nodemailer": "^6.9.3"
   }
 }

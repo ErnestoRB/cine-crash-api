@@ -1,13 +1,7 @@
-import nodemailer from 'nodemailer'
 import { validate, Joi } from 'express-validation'
 import express from 'express'
-import { emailCredentials } from '../../environment'
+import { transporter } from '../../email'
 const router = express.Router()
-
-const transporter = nodemailer.createTransport({
-  service: 'gmail',
-  auth: emailCredentials,
-})
 
 router.post(
   '/',
