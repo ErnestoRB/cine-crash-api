@@ -5,7 +5,7 @@ import cors from 'cors'
 import path from 'path'
 import { ValidationError } from 'express-validation'
 const app = express()
-const port = Number(process.env.PORT ?? 4000)
+const port = Number(process.env.PORT ?? 4001)
 
 if (Number.isNaN(app)) {
   console.error('Puerto inválido')
